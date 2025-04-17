@@ -2,7 +2,7 @@ from tabulate import tabulate
 import pandas as pd
 
 def print_table(title, data):
-    print(f"\n📌 {title}")
+    print(f"\n{title}")
     if isinstance(data, pd.DataFrame):
         print(tabulate(data, headers='keys', tablefmt='pretty'))
     elif isinstance(data, pd.Series):
