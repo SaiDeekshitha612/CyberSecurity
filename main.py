@@ -13,7 +13,7 @@ if df is not None:
 
     connection = connect_to_db()
     cursor = connection.cursor()
-    print("🔗 MySQL connection established!")
+    print("MySQL connection established!")
 
     insert_data_to_mysql(df, cursor, connection)
     cursor.close()
